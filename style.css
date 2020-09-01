@@ -1,0 +1,86 @@
+body {
+  background-color: #33AFA9;
+  font-family: Lato;
+}
+
+#inner {
+    width: 60%;
+    height: 75%;
+    text-align: left;
+    margin: auto;
+    margin-top: 60px;
+}
+
+#save {
+    width: 150px;
+    height: 42px;
+    color: white;
+    background-color: darkcyan;
+    font-family: Lato;
+    font-size: large;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-left: 160px;
+}
+
+#cancel {
+    width: 150px;
+    height: 42px;
+    color: white;
+    background-color: darkcyan;
+    font-family: Lato;
+    font-size: large;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+#save:hover {
+    background-color: white;
+    color:darkcyan;
+  }
+
+#cancel:hover {
+    background-color: white;
+    color:darkcyan;
+  }
+
+h2{
+    display: inline
+  }
+
+  legend {
+    color: blanchedalmond;
+    background-color: #2B7A78;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+  fieldset {
+    background-color: lightblue;
+    border-radius: 8px;
+  }
+
+  #Type {
+    margin-left: 21px;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+  #Name {
+    margin-left: 13px;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+  #Start {
+    margin-left: 20px;
+  }
+
+  #Post {
+    margin-left: 8px;
+  }
+
+  input {
+    border: 2px solid black;
+    border-radius: 5px;
+  }

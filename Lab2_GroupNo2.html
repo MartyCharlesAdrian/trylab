@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2_GroupNo2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div id="inner">
+    <fieldset style="border: 2px solid black">
+        <legend style="border: 2px solid black"><h2>Create a New Event</h2></legend>
+    <form onsubmit="displayEvent()">
+        Event Type:
+    <select required id="Type">
+        <option value=""disabled selected>Choose one event type</option>
+        <option value="Seminar">Seminar</option>
+        <option value="Conference">Conference</option>
+        <option value="Trade Show">Trade Show</option>
+        <option value="Workshop">Workshop</option>
+    </select><br><br>
+
+        Event Name:
+    <textarea id="Name" cols="70" rows="1" required></textarea><br><br>
+
+        Event Date: 
+    <input type="date" id="Start" min="2020-08-19" required> to
+    <input type="date" id="End" min="2020-08-19" required> <br><br>
+
+        Posting Date:
+    <input type="date" id="Post" min="2020-08-19" required> <br><br><br><br>
+    
+
+    <input type="checkbox" id="Reg" value="reg" onclick="enableButton1()">
+    Is registration required?<br><br>
+
+    <input type="checkbox" id="Fam" value="fam">
+    Is this event associated with any Family Programs?<br><br>
+
+    <input type="checkbox" id="AGE" value="age" disabled>
+    Upon registration completion, are users to receive an Auto Generated Email?<br><br>
+
+    <input type="checkbox" id="POC" value="poc" onclick="enableButton2()">
+    Is there a point of contact?<br><br>
+
+    <input type="checkbox" id="Host" value="host" disabled>
+    Is there a hosting command point of contact?<br><br><br>
+   
+    <input id="save" type="submit" value="Save" >
+    <input id="cancel" type="reset" value="Cancel"><br><br>
+    
+    </form>
+</fieldset>
+</div>
+
+</body>
+</html>
